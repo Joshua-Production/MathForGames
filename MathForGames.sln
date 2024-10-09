@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34511.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathLibrary", "MathLibrary\MathLibrary.csproj", "{5DF54CF8-63DA-441A-AE8F-0F6A23186B18}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sandbox", "Sandbox\Sandbox.csproj", "{CE5B73F7-9658-4260-B2D1-1917AE2BBDFD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5DF54CF8-63DA-441A-AE8F-0F6A23186B18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DF54CF8-63DA-441A-AE8F-0F6A23186B18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DF54CF8-63DA-441A-AE8F-0F6A23186B18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DF54CF8-63DA-441A-AE8F-0F6A23186B18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE5B73F7-9658-4260-B2D1-1917AE2BBDFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE5B73F7-9658-4260-B2D1-1917AE2BBDFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE5B73F7-9658-4260-B2D1-1917AE2BBDFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE5B73F7-9658-4260-B2D1-1917AE2BBDFD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AAF6FF45-F6B0-476A-98D3-867951F136FB}
+	EndGlobalSection
+EndGlobal
