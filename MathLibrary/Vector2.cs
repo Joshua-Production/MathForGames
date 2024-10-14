@@ -3,24 +3,64 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Numerics;
+
 
 namespace MathLibrary
 {
-    public class Vector2
+    public struct Vector2
     {
-        float x, y;
+        public float x, y;
 
-        public Vector2()
+        public float Magnitude
         {
-            x = 0;
-            y = 0;
+            get
+            {
+                // Sqrt = square root 
+                // Pow = power of 
+               
+                // c = sqrt(x^2 + y^2)
+                return (float)Math.Abs(Math.Sqrt(Math.Pow(x, 2) + Math.Pow(y, 2)));
+            }
         }
-        public Vector2(float x, float y)
+        
+        public Vector2 Normalized
+        {
+            get
+            {
+                return this / Magnitude;
+            }
+        }
+
+        
+        
+        public Vector2(float x = 0, float y = 0)
         {
             this.x = x;
             this.y = y;
         }
+
+        public Vector2 Normalize()
+        {
+            this = this.Normalized;
+            return this;
+        }
+
+        public override string ToString()
+        {
+            
+            return "(" + x + ", " + y + ")";
+        }
+
+        public static bool operator ==(Vector2 left , Vector2 right)
+        {
+            return (left.x == right.x) && (left.y == right.y);
+        }
+
+        public static bool operator !=(Vector2 left, Vector2 right)
+        {
+            return !(left == right);
+        }
+
         // Operator overload for addition
         public static Vector2 operator +(Vector2 left, Vector2 right)
         {
@@ -34,21 +74,16 @@ namespace MathLibrary
         }
 
         //Operator overload for multiplication by a vector
-        public static Vector2 operator *(Vector2 left, Vector2 right)
+        public static Vector2 operator *(Vector2 left, float scalar)
         {
-            return new Vector2(left.x * right.x, left.y * right.y);
+            return new Vector2(left.x * scalar, left.y * scalar);
         }
 
-        // Operator overload for multiplication by a scalar
-        public static Vector2 operator *(Vector2 left, float right)
-        {
-            return new Vector2(left.x * right, left.y * right);
-        }
-
+       
         // Operator overload for division
-        public static Vector2 operator /(Vector2 left, Vector2 right)
+        public static Vector2 operator /(Vector2 left, float scalar)
         {
-            return new Vector2(left.x / right.x, left.y / right.y);
+            return new Vector2(left.x / scalar, left.y / scalar);
         }
 
         // implicit conversion form system.Numerics.Vector2 to Vector2
@@ -66,8 +101,6 @@ namespace MathLibrary
 
     }
 
-
-
-
+    
 
 }
