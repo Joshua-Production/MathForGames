@@ -10,10 +10,58 @@ namespace Sandbox
         
         static void Main(string[] args)
         {
+            // Testing my DotProduct for Vector2
+
+            Vector2 vector2test = new Vector2(1, 2);
+            Vector2 vector2test2 = new Vector2(3, 4);
+
+            // Making a variable that stores the sum
+            float vector2sum;
+
+            // using DotProduct
+            vector2sum = vector2test.DotProduct(vector2test2);
+
+            Console.WriteLine(vector2test.x + " " + vector2test.y);
+            Console.WriteLine(vector2test2.x + " " + vector2test2.y);
+            Console.WriteLine(vector2sum);
+
+
+
+
+            // Testing DotProduct for Vector3
+
+            // Create new vectors and giving them values
+            Vector3 vector3test = new Vector3(1, 2, 3);
+            Vector3 vector3test2 = new Vector3(4, 5, 6);
+
+            // Making a variable that stores the sum
+            float vector3sum;
+
+            // using DotProduct
+            vector3sum = vector3test.DotProduct(vector3test2);
+
+            Console.WriteLine(vector3test.x + " " + vector3test.y + " " + vector3test.z);
+            Console.WriteLine(vector3test2.x + " " + vector3test2.y + " " + vector3test2.z);
+            Console.WriteLine(vector3sum);
+
+            Matrix3 matrix3test = new Matrix3
+                                     (1, 0, 0,                 
+                                     0, 1, 0,
+                                     0, 0, 1);
            
+            
+
+            Console.WriteLine(matrix3test);
+
+
+
+
+            
+            // Creating a window for our game
 
             Raylib.InitWindow(800, 480, "Hello World");
 
+            
             Vector2 screenDimensions = new Vector2(Raylib.GetScreenWidth(), Raylib.GetScreenHeight());
 
             // Player
