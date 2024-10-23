@@ -4,6 +4,7 @@ using System.Linq;
 using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
+using MathLibrary;
 
 namespace MathLibrary
 {
@@ -45,13 +46,58 @@ namespace MathLibrary
                 // Return Identity matrix
             }
         }
+        // Making a Matrix3 Translation
+        public static Matrix3 CreateTranslation(float x, float y)
+        {
+            return new Matrix3
+                (1, 0, x,
+                 0, 1, y,
+                 0, 0, 1);
+        }
+        // Making a  Matrix3 Rotation 
+        public static Matrix3 CreateRotation(float radians)
+        {
+            float cos = (float)Math.Cos(radians);
+            float sin = (float)Math.Sin(radians);
+
+            return new Matrix3
+              (cos, -sin, 0,
+               sin, cos, 0,
+                 0,   0,  1);
+            
+            
+        }
+
+        // Making a Matrix3 Scale
+        public static Matrix3 CreateScale(float x, float y)
+        {
+            return new Matrix3
+                (x, 0, 0,
+                 0, y, 0,
+                 0, 0, 1);
+        }
+
+
+        // making Matrix3 * Vector3
+        public static Vector3 operator *(Matrix3 a, Vector3 b)
+        {
+            return new Vector3(
+                b.x * a.m00 + b.y * a.m10 + b.z * a.m20,
+                b.x * a.m01 + b.y * a.m11 + b.z * a.m21,
+                b.x * a.m02 + b.y * a.m12 + b.z * a.m22
+                );
+        }
+        
+
+
+
         // Making the ToString for Matrix3
         public override string ToString()
         {
             
 
-            return "(" + m00 + " " + m01 + " " + m02 + 
-                  "\n " + m10 + " " + m11 + " " + m12 + 
+            return"(" + m00 + " " + m01 + " " + m02 + 
+                "\n " + m10 + " " + m11 + " " + m12 + 
                  "\n "+ m20 + " " + m21 + " " + m22 + " "                       
                    +")";
 

@@ -48,7 +48,7 @@ namespace MathLibrary
         public override string ToString()
         {
 
-            return "(" + x + ", " + y + ")";
+            return "(" + x + ", " + y + ", " + z +")";
         }
 
         public float DotProduct(Vector3 other)
@@ -90,6 +90,11 @@ namespace MathLibrary
             return new Vector3(left.x * scalar, left.y * scalar, left.z * scalar);
         }
 
+        //Operator overload for multiplication by a scalar * vector
+        public static Vector3 operator *(float scalar, Vector3 left)
+        {
+            return new Vector3(scalar * left.x, scalar * left.y, scalar * left.z);
+        }
 
         // Operator overload for division
         public static Vector3 operator /(Vector3 left, float scalar)

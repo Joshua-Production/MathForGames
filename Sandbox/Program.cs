@@ -25,8 +25,8 @@ namespace Sandbox
             Console.WriteLine(vector2test2.x + " " + vector2test2.y);
             Console.WriteLine(vector2sum);
 
-
-
+            
+           
 
             // Testing DotProduct for Vector3
 
@@ -53,9 +53,22 @@ namespace Sandbox
 
             Console.WriteLine(matrix3test);
 
+            // Vectors
+            // - pre scale float * vector /
 
+            // Matrix 3 
+            // - Create Rotation (float) /
+            // Matrix3 * Vector3/
 
-
+            // Matrix4
+            // - Create Rotation x(float)/
+            // - Create Rotation y(float)/
+            // - Create Rotation z(float)/
+            // - Matrix4 * Vector4
+          
+           
+            
+           
             
             // Creating a window for our game
 
@@ -101,7 +114,7 @@ namespace Sandbox
                 float distance = enemyPosition.Distance(playerPosition);
                 float angleToEnemy = (float)Math.Abs(playerToEnemyDirection.Angle(playerForward));
 
-               
+              
                 
 
                 // If enemy is in sight
