@@ -41,7 +41,7 @@ namespace MathLibrary
 
         public Vector3 Normalize()
         {
-            this = this.Normalized;
+            this = Normalized;
             return this;
         }
 
@@ -64,7 +64,7 @@ namespace MathLibrary
 
         public static bool operator ==(Vector3 left, Vector3 right)
         {
-            return (left.x == right.x) && (left.y == right.y && (left.z == right.z));
+            return (left.x == right.x) && (left.y == right.y) && (left.z == right.z);
         }
 
         public static bool operator !=(Vector3 left, Vector3 right)

@@ -50,9 +50,9 @@ namespace MathLibrary
         public static Matrix3 CreateTranslation(float x, float y)
         {
             return new Matrix3
-                (1, 0, x,
-                 0, 1, y,
-                 0, 0, 1);
+                (1, 0, 0,
+                 0, 1, 0,
+                 x, y, 1);
         }
         // Making a  Matrix3 Rotation 
         public static Matrix3 CreateRotation(float radians)
@@ -61,8 +61,8 @@ namespace MathLibrary
             float sin = (float)Math.Sin(radians);
 
             return new Matrix3
-              (cos, -sin, 0,
-               sin, cos, 0,
+              (cos, sin, 0,
+               -sin, cos, 0,
                  0,   0,  1);
             
             
@@ -82,9 +82,9 @@ namespace MathLibrary
         public static Vector3 operator *(Matrix3 a, Vector3 b)
         {
             return new Vector3(
-                b.x * a.m00 + b.y * a.m10 + b.z * a.m20,
-                b.x * a.m01 + b.y * a.m11 + b.z * a.m21,
-                b.x * a.m02 + b.y * a.m12 + b.z * a.m22
+                b.x * a.m00 + b.y * a.m01 + b.z * a.m02,
+                b.x * a.m10 + b.y * a.m11 + b.z * a.m12,
+                b.x * a.m20 + b.y * a.m21 + b.z * a.m22
                 );
         }
         
