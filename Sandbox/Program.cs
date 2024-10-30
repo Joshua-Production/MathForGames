@@ -18,7 +18,7 @@ namespace Sandbox
 
             Transform2D t1 = new Transform2D(a);
             t1.LocalScale = new Vector2(100, 100);
-            Vector2 offset = new Vector2(t1.LocalScale.x * SCALE_MULTIPLIER / 2, t1.LocalScale.y * SCALE_MULTIPLIER / 2);
+            Vector2 offset = new Vector2(t1.LocalScale.x  / 2, t1.LocalScale.y / 2);
             float g = (Raylib.GetScreenWidth() * 0.33f) - offset.x; 
                 
             Console.WriteLine(g);
@@ -39,7 +39,7 @@ namespace Sandbox
                 // Draw t1
                 Raylib.DrawRectangleV(t1.GlobalPositon, t1.GlobalScale, Color.Blue);
                 //Raylib.DrawCircle(200, 200, 100, Color.Black);
-                
+                Raylib.DrawLineV(t1.GlobalPositon + offset, t1.GlobalPositon + offset + (t1.Forward * 100), Color.Red);
                 Raylib.EndDrawing();
 
 
