@@ -17,17 +17,25 @@ namespace Sandbox
             Actor a = new Actor();
 
             Transform2D t1 = new Transform2D(a);
-            t1.LocalScale = new Vector2(100, 100);
-            Vector2 offset = new Vector2(t1.LocalScale.x  / 2, t1.LocalScale.y / 2);
-            float g = (Raylib.GetScreenWidth() * 0.33f) - offset.x; 
-                
-            Console.WriteLine(g);
+            Vector2 offset = new Vector2(t1.LocalScale.x * SCALE_MULTIPLIER / 2, t1.LocalScale.y * SCALE_MULTIPLIER / 2);
             t1.LocalPosition = new Vector2(
-                
-                (Raylib.GetScreenHeight() * 0.33f) -  offset.y);
-            
+                (Raylib.GetScreenWidth() * 0.33f) - offset.x,
+                (Raylib.GetScreenWidth() * 0.33f) - offset.y);
 
-            
+
+            Transform2D t2 = new Transform2D(a);
+            t1.AddChild(t2);
+            t2.LocalScale = new Vector2(.5f, .5f);
+            t2.LocalPosition = new Vector2(
+                (100) - offset.x,
+                (50) - offset.y);
+
+            t1.LocalPosition = new Vector2(
+
+                (Raylib.GetScreenHeight() * 0.33f) - offset.y);
+
+
+
 
             while (!Raylib.WindowShouldClose())
             {
@@ -36,9 +44,30 @@ namespace Sandbox
 
                 t1.Translate(t1.Forward * 50 * Raylib.GetFrameTime());
                 t1.Rotate(0.5f * Raylib.GetFrameTime());
+
+                t2.Rotate(0.5f * Raylib.GetFrameTime());
+
+                
                 // Draw t1
+                Rectangle rect = new Rectangle(t1.GlobalPositon + offset, t1.GlobalScale * SCALE_MULTIPLIER);
+                Raylib.DrawRectanglePro(
+                    rect,
+                    new Vector2(0, 0) + offset,
+                    -t1.GlobalRotationAngle * (180 / (float)Math.PI),
+                    Color.Blue);
+
+                // Draw t2
+                rect = new Rectangle(t2.GlobalPositon + offset, t2.GlobalScale * SCALE_MULTIPLIER);
+                Raylib.DrawRectanglePro(
+                    rect,
+                    new Vector2(0, 0) + offset / 2,
+                    -t2.GlobalRotationAngle * (180 / (float)Math.PI),
+                    Color.Green);
+
+
+
                 Raylib.DrawRectangleV(t1.GlobalPositon, t1.GlobalScale, Color.Blue);
-                //Raylib.DrawCircle(200, 200, 100, Color.Black);
+                
                 Raylib.DrawLineV(t1.GlobalPositon + offset, t1.GlobalPositon + offset + (t1.Forward * 100), Color.Red);
                 Raylib.EndDrawing();
 

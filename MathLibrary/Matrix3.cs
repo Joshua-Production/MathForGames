@@ -54,7 +54,7 @@ namespace MathLibrary
                  0, 1, y,
                  0, 0, 1);
         }
-        // Making a  Matrix3 Rotation 
+        // Making a Matrix3 Rotation 
         public static Matrix3 CreateRotation(float radians)
         {
             float cos = (float)Math.Cos(radians);

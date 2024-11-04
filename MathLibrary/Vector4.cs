@@ -10,6 +10,8 @@ namespace MathLibrary
     {
         public float x, y, z, w;
 
+        // get the magnitude of the vector
+        // Magnitude = Length
         public float Magnitude
         {
             get
@@ -22,10 +24,13 @@ namespace MathLibrary
             }
         }
 
+        // Property to get the normalized version of the vector.
+        // Normalization makes the vector length 1 while retaining its direction
         public Vector4 Normalized
         {
             get
             {
+                // If the magnitude is 0, return a zero vector so you dont divide by zero
                 if (Magnitude == 0)
                     return new Vector4();
                 return this / Magnitude;
@@ -33,7 +38,7 @@ namespace MathLibrary
         }
 
 
-
+        // initialize the vector with specified x, y, z, and w values
         public Vector4(float x = 0, float y = 0, float z = 0, float w = 0)
         {
             this.x = x;
@@ -42,34 +47,38 @@ namespace MathLibrary
             this.w = w;
         }
 
+        // normalize the vector in place and return the normalized vector
         public Vector4 Normalize()
         {
             this = this.Normalized;
             return this;
         }
 
+        // override the ToString
         public override string ToString()
         {
 
             return "(" + x + ", " + y + ", " + z + ", " + w +")";
         }
 
+        // calculate the dot product with another vector
         public float DotProduct(Vector4 other)
         {
             return (x * other.x) + (y * other.y) + (z * other.z) + (w * other.w);
         }
-
+        // calculate the cross product with another vector
         public Vector4 CrossProduct(Vector4 other)
         {
             return new Vector4((y * other.z - z * other.y), (z * other.x - x * other.z), (x * other.y - y * other.x),(w = 0));
         }
 
-
+        // Operator overload for equality comparison
         public static bool operator ==(Vector4 left, Vector4 right)
         {
             return (left.x == right.x) && (left.y == right.y) && (left.z == right.z) && (left.w == right.w);
         }
 
+        // Operator overload for inequality comparison
         public static bool operator !=(Vector4 left, Vector4 right)
         {
             return !(left == right);

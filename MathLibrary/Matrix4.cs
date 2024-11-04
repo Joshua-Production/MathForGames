@@ -61,7 +61,7 @@ namespace MathLibrary
                  0, 0, 1, z,
                  0, 0, 0, 1);
         }
-        // Making a  Matrix4 Rotation 
+        // Making a Matrix4 Rotation on the X axis
         public static Matrix4 CreateRotationX(float radians)
         {
             float cos = (float)Math.Cos(radians);
@@ -75,6 +75,7 @@ namespace MathLibrary
 
         }
 
+        // Making a Matrix4 Rotation on the Y axis
         public static Matrix4 CreateRotationY(float radians)
         {
             float cos = (float)Math.Cos(radians);
@@ -88,6 +89,7 @@ namespace MathLibrary
 
         }
 
+        // Making a Matrix4 Rotation on the Z axis
         public static Matrix4 CreateRotationZ(float radians)
         {
             float cos = (float)Math.Cos(radians);
@@ -111,7 +113,7 @@ namespace MathLibrary
         }
 
 
-
+        // making Matrix4 * Vector4
         public static Vector4 operator *(Matrix4 a, Vector4 b)
         {
             return new Vector4(
