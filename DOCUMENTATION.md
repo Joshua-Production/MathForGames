@@ -48,7 +48,7 @@ Representation of 2D vectors and points
 |(System.Numerics.Vector2 Vector2)|Converts a System.Numerics.Vector2 to a custom Vector2 by copying the X and Y|
 |(Vector2 System.Numerics.Vector2)|Converts a custom Vector 2  to a System.Numerics.Vector2 by copying the X and Y|
 
-# <ins> Vector3
+#  Vector3
 
 ## Description
 
