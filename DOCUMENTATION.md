@@ -4,7 +4,7 @@ Welcome to the documentation for my MathLibrary
 
 ## Table of Contents
 
-[Vector2](Vector2)
+[Vector2](#vector2)
 [Vector3](Vector3)
 [Vector4](Vector4)
 [Matrix3](Matrix3)
@@ -12,7 +12,7 @@ Welcome to the documentation for my MathLibrary
 
 
 
-#  <ins> [Vector2](Vector2)
+#  <ins> [Vector2](#vector2)
 
 ## Description
 
