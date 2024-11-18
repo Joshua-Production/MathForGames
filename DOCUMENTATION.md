@@ -4,11 +4,11 @@ Welcome to the documentation for my MathLibrary
 
 ## Table of Contents
 
--[Vector2](#vector2)
--[Vector3](#vector3)
--[Vector4](#vector4)
--[Matrix3](#matrix3)
--[Matrix4](#matric4)
+- [Vector2](#vector2)
+- [Vector3](#vector3)
+- [Vector4](#vector4)
+- [Matrix3](#matrix3)
+- [Matrix4](#matric4)
 
 
 
