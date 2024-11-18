@@ -4,11 +4,11 @@ Welcome to the documentation for my MathLibrary
 
 ## Table of Contents
 
-[Vector2](#vector2)
-[Vector3](Vector3)
-[Vector4](Vector4)
-[Matrix3](Matrix3)
-[Matrix4](Matric4)
+-[Vector2](#vector2)
+-[Vector3](#vector3)
+-[Vector4](#vector4)
+-[Matrix3](#matrix3)
+-[Matrix4](#matric4)
 
 
 
@@ -38,5 +38,16 @@ Representation of 2D vectors and points
 ## Operator Overloads
 |Operator|Description|
 |:------:|:---------:|
-|==      |Overload|
+|==      |Overload compares vectors if they are equal return true|
+|!=      |Overload compares vectors if they are not equal return false|
+|+       |Overload for adding vectors|
+|-       |Overload for subtracting vectors|
+|Vector*Scalar|Overload for multiplying vector by a scalar|
+|Scalar*Vector |Overload for multiplying scalar by a vector|
+|/ |Overload for dividing vector by a scalar|
+|(System.Numerics.Vector2 Vector2)|Converts a System.Numerics.Vector2 to a custom Vector2 by copying the X and Y|
+|(Vector2 System.Numerics.Vector2)|Converts a custom Vector 2  to a System.Numerics.Vector2 by copying the X and Y|
+
+# <ins> Vector3
+
 

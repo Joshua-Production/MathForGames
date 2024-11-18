@@ -71,6 +71,7 @@ namespace Sandbox
                 Raylib.DrawLineV(t1.GlobalPositon + offset, t1.GlobalPositon + offset + (t1.Forward * 100), Color.Red);
                 Raylib.EndDrawing();
 
+               
 
             }
 

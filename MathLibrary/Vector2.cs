@@ -18,7 +18,7 @@ namespace MathLibrary
             {
                 // Sqrt = square root 
                 // Pow = power of 
-               
+
                 // c = sqrt(x^2 + y^2)
                 return (float)Math.Abs(Math.Sqrt(Math.Pow(x, 2) + Math.Pow(y, 2)));
             }
@@ -52,11 +52,11 @@ namespace MathLibrary
             this = this.Normalized;
             return this;
         }
-        
+
         // Override To string
         public override string ToString()
         {
-            
+
             return "(" + x + ", " + y + ")";
         }
 
@@ -81,7 +81,7 @@ namespace MathLibrary
         }
 
         // overload for equality comparison
-        public static bool operator ==(Vector2 left , Vector2 right)
+        public static bool operator ==(Vector2 left, Vector2 right)
         {
             return (left.x == right.x) && (left.y == right.y);
         }
@@ -111,9 +111,9 @@ namespace MathLibrary
         }
 
         //Operator overload for multiplication by a scalar * vector
-        public static Vector2 operator *(float scalar ,Vector2 left)
+        public static Vector2 operator *(float scalar, Vector2 left)
         {
-            return new Vector2(scalar * left.x , scalar * left.y);
+            return new Vector2(scalar * left.x, scalar * left.y);
         }
 
         // Operator overload for division
@@ -124,7 +124,7 @@ namespace MathLibrary
 
         // implicit conversion form system.Numerics.Vector2 to Vector2
 
-         public static implicit operator Vector2(System.Numerics.Vector2 vector)
+        public static implicit operator Vector2(System.Numerics.Vector2 vector)
         {
             return new Vector2(vector.X, vector.Y);
         }
@@ -137,6 +137,6 @@ namespace MathLibrary
 
     }
 
-    
+
 
 }
