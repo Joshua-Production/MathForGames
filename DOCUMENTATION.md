@@ -12,7 +12,7 @@ Welcome to the documentation for my MathLibrary
 
 
 
-#  <ins> Vector2 
+#   Vector2 
 
 ## Description
 
