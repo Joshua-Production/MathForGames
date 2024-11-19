@@ -86,7 +86,7 @@ Representation of 3D vectors and points
 |(System.Numerics.Vector3 Vector3)|Converts a System.Numerics.Vector3 to a custom Vector3 by copying the X, Y, and Z|
 |(Vector3 System.Numerics.Vector3)|Converts a custom Vector 3  to a System.Numerics.Vector3 by copying the X, Y, and Z|
 
-# Vector 4
+# Vector4
 ## Description
 
 Representation of 3D vectors and points 
@@ -123,4 +123,9 @@ Representation of 3D vectors and points
 |/ |Overload for dividing vector by a scalar|
 |(System.Numerics.Vector3 Vector3)|Converts a System.Numerics.Vector3 to a custom Vector3 by copying the X, Y, and Z|
 |(Vector3 System.Numerics.Vector3)|Converts a custom Vector 3  to a System.Numerics.Vector3 by copying the X, Y, and Z|
+
+
+# Matrix3
+## Description
+Represents a 3x3 rectangular array or table of numbers
 
