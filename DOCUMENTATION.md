@@ -145,7 +145,7 @@ Represents a 3x3 rectangular array or table of numbers
 |*|Overload for multiplying matrices together|
 |Matrix3 * Vector3|Overload for multiplying matrices with vectors|
 
-# Matrix4
+# Matrix
 ## Description
 Represents a 4x4 rectangular array or table of numbers
 
