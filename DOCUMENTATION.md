@@ -134,12 +134,15 @@ Represents a 3x3 rectangular array or table of numbers
 |----------|-----------|
 |Matrix3 Identity|Returns the Matrix as an identity Matrix|
 
-## Methods
-|Methods|Description|
-|:------:|:---------:|
-|
 ## Operator Overloads
 |Operator|Description|
 |:------:|:---------:|
-|
+|CreateTranslation|Creates a translation matrix|
+|CreateRotation|Creates a rotation matrix|
+|CreateScale|Creates a scaling matrix|
+|+|Overload for adding matrices|
+|-|Overload for subtracting matrices|
+|*|Overload for multiplying matrices together|
+|Matrix3*Vector3*|Overload for multiplying matrices with vectors|
+
 
