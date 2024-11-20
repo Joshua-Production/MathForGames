@@ -43,7 +43,7 @@ Representation of 2D vectors and points
 |+       |Overload for adding vectors|
 |-       |Overload for subtracting vectors|
 |Vector * Scalar|Overload for multiplying vector by a scalar|
-|Scalar*Vector |Overload for multiplying scalar by a vector|
+|Scalar * Vector |Overload for multiplying scalar by a vector|
 |/ |Overload for dividing vector by a scalar|
 |(System.Numerics.Vector2 Vector2)|Converts a System.Numerics.Vector2 to a custom Vector2 by copying the X and Y|
 |(Vector2 System.Numerics.Vector2)|Converts a custom Vector 2  to a System.Numerics.Vector2 by copying the X and Y|
@@ -80,8 +80,8 @@ Representation of 3D vectors and points
 |!=      |Overload compares vectors if they are not equal return false|
 |+       |Overload for adding vectors|
 |-       |Overload for subtracting vectors|
-|Vector*Scalar|Overload for multiplying vector by a scalar|
-|Scalar*Vector |Overload for multiplying scalar by a vector|
+|Vector * Scalar|Overload for multiplying vector by a scalar|
+|Scalar * Vector |Overload for multiplying scalar by a vector|
 |/ |Overload for dividing vector by a scalar|
 |(System.Numerics.Vector3 Vector3)|Converts a System.Numerics.Vector3 to a custom Vector3 by copying the X, Y, and Z|
 |(Vector3 System.Numerics.Vector3)|Converts a custom Vector 3  to a System.Numerics.Vector3 by copying the X, Y, and Z|
@@ -118,8 +118,8 @@ Representation of 3D vectors and points
 |!=      |Overload compares vectors if they are not equal return false|
 |+       |Overload for adding vectors|
 |-       |Overload for subtracting vectors|
-|Vector*Scalar|Overload for multiplying vector by a scalar|
-|Scalar*Vector |Overload for multiplying scalar by a vector|
+|Vector * Scalar|Overload for multiplying vector by a scalar|
+|Scalar * Vector |Overload for multiplying scalar by a vector|
 |/ |Overload for dividing vector by a scalar|
 |(System.Numerics.Vector3 Vector3)|Converts a System.Numerics.Vector3 to a custom Vector3 by copying the X, Y, and Z|
 |(Vector3 System.Numerics.Vector3)|Converts a custom Vector 3  to a System.Numerics.Vector3 by copying the X, Y, and Z|
