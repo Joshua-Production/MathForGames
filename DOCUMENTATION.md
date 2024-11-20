@@ -143,6 +143,6 @@ Represents a 3x3 rectangular array or table of numbers
 |+|Overload for adding matrices|
 |-|Overload for subtracting matrices|
 |*|Overload for multiplying matrices together|
-|Matrix3*Vector3*|Overload for multiplying matrices with vectors|
+|Matrix3*Vector3|Overload for multiplying matrices with vectors|
 
 
