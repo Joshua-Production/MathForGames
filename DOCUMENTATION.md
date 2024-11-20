@@ -129,3 +129,17 @@ Representation of 3D vectors and points
 ## Description
 Represents a 3x3 rectangular array or table of numbers
 
+## Properties
+|Properties|Decsription|
+|----------|-----------|
+|Matrix3 Identity|Returns the Matrix as an identity Matrix|
+
+## Methods
+|Methods|Description|
+|:------:|:---------:|
+|
+## Operator Overloads
+|Operator|Description|
+|:------:|:---------:|
+|
+
