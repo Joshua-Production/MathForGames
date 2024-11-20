@@ -42,7 +42,7 @@ Representation of 2D vectors and points
 |!=      |Overload compares vectors if they are not equal return false|
 |+       |Overload for adding vectors|
 |-       |Overload for subtracting vectors|
-|Vector*Scalar|Overload for multiplying vector by a scalar|
+|Vector * Scalar|Overload for multiplying vector by a scalar|
 |Scalar*Vector |Overload for multiplying scalar by a vector|
 |/ |Overload for dividing vector by a scalar|
 |(System.Numerics.Vector2 Vector2)|Converts a System.Numerics.Vector2 to a custom Vector2 by copying the X and Y|
