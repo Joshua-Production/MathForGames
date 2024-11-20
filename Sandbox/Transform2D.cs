@@ -12,13 +12,13 @@ namespace Sandbox
     internal class Transform2D
     {
         // transformation matrices
-        private Matrix3 _localMatrix = Matrix3.Identinty;
-        private Matrix3 _globalMatrix = Matrix3.Identinty;
+        private Matrix3 _localMatrix = Matrix3.Identity;
+        private Matrix3 _globalMatrix = Matrix3.Identity;
 
         // transformation components
-        private Matrix3 _localTranslation = Matrix3.Identinty;
-        private Matrix3 _localRotation = Matrix3.Identinty;
-        private Matrix3 _localScale = Matrix3.Identinty;
+        private Matrix3 _localTranslation = Matrix3.Identity;
+        private Matrix3 _localRotation = Matrix3.Identity;
+        private Matrix3 _localScale = Matrix3.Identity;
 
         // owner of the transform
         private Actor _owner;

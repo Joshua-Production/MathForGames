@@ -38,7 +38,7 @@ namespace MathLibrary
             this.m33 = m33;
         }
 
-        public static Matrix4 Identinty
+        public static Matrix4 Identity
         {
 
             get

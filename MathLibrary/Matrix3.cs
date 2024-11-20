@@ -33,7 +33,7 @@ namespace MathLibrary
             
         }
 
-        public static Matrix3 Identinty
+        public static Matrix3 Identity
         {
           
             get
