@@ -8,7 +8,7 @@ Welcome to the documentation for my MathLibrary
 - [Vector3](#vector3)
 - [Vector4](#vector4)
 - [Matrix3](#matrix3)
-- [Matrix4](#matric4)
+- [Matrix4](#matrix4)
 
 
 
