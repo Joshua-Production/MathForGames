@@ -89,7 +89,7 @@ Representation of 3D vectors and points
 # Vector4
 ## Description
 
-Representation of 3D vectors and points 
+Representation of 4D vectors and points 
 
 ## Properties
 
